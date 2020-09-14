@@ -14,9 +14,14 @@ int main()
 }
 
 void RunMathematical() {
-    //Run the first practice problem:
+    /* //Run the first practice problem:
     unsigned int testArr[] = {4, 2, 4, 5, 3};
     PrintThePattern_Set1(testArr);
+    */
+
+    //Arithmetic Series:
+    PrintNOfArithmeticSeries(6, 3, 10);
+
 }
 
 

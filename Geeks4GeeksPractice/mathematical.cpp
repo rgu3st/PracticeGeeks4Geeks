@@ -46,3 +46,27 @@ void PrintN(int N) {
 	//it said to just print $ instead of new lines
 	std::cout << std::endl;
 }
+
+
+
+
+
+/*
+https://practice.geeksforgeeks.org/problems/series-ap/0
+Print the Nth term of the arithmetic series
+*/
+void PrintNOfArithmeticSeries(int in1, int in2, int N) {
+	if (in1 < -10000 || in1 > 10000 || in2 < -10000 || in2 > 10000) {
+		std::cerr << "IN values out of range";
+		exit(-1);
+	}
+	if (N > 1000 || N < 1) {
+		std::cerr << "N value out of range";
+		exit(-1);
+	}
+	//Basic error checking done
+	
+	int stepSize = in2 - in1;
+
+	std::cout << "With " << in1 << ", " << in2 << " the term number " << N << " is: " << in1 + ((N-1) * stepSize) ;  // -1 since we are including the first term in the count 
+}
